@@ -10,11 +10,18 @@
 						"type": "DatasetReference"
 					},
 					"name": "data"
+				},
+				{
+					"dataset": {
+						"referenceName": "Excel1",
+						"type": "DatasetReference"
+					},
+					"name": "exceldata"
 				}
 			],
 			"sinks": [],
 			"transformations": [],
-			"script": "source(output(\n\t\t{Country/Region} as string,\n\t\tContinent as string,\n\t\tPopulation as string,\n\t\tTotalCases as string,\n\t\tNewCases as string,\n\t\tTotalDeaths as string,\n\t\tNewDeaths as string,\n\t\tTotalRecovered as string,\n\t\tNewRecovered as string,\n\t\tActiveCases as string,\n\t\t{Serious,Critical} as string,\n\t\t{Tot Cases/1M pop} as string,\n\t\t{Deaths/1M pop} as string,\n\t\tTotalTests as string,\n\t\t{Tests/1M pop} as string,\n\t\t{WHO Region} as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> data"
+			"script": "source(output(\n\t\t{Country/Region} as string,\n\t\tContinent as string,\n\t\tPopulation as string,\n\t\tTotalCases as string,\n\t\tNewCases as string,\n\t\tTotalDeaths as string,\n\t\tNewDeaths as string,\n\t\tTotalRecovered as string,\n\t\tNewRecovered as string,\n\t\tActiveCases as string,\n\t\t{Serious,Critical} as string,\n\t\t{Tot Cases/1M pop} as string,\n\t\t{Deaths/1M pop} as string,\n\t\tTotalTests as string,\n\t\t{Tests/1M pop} as string,\n\t\t{WHO Region} as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> data\nsource(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> exceldata"
 		}
 	}
 }
