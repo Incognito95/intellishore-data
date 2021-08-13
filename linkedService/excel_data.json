@@ -1,0 +1,11 @@
+{
+	"name": "excel_data",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataLakeStore",
+		"typeProperties": {
+			"dataLakeStoreUri": "https://undefined.azuredatalakestore.net/webhdfs/v1",
+			"tenant": "81cc5591-4559-4fef-ac61-5ec985553879"
+		}
+	}
+}
