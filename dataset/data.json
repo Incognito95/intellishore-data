@@ -1,0 +1,86 @@
+{
+	"name": "data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "data",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Country/Region",
+				"type": "String"
+			},
+			{
+				"name": "Continent",
+				"type": "String"
+			},
+			{
+				"name": "Population",
+				"type": "String"
+			},
+			{
+				"name": "TotalCases",
+				"type": "String"
+			},
+			{
+				"name": "NewCases",
+				"type": "String"
+			},
+			{
+				"name": "TotalDeaths",
+				"type": "String"
+			},
+			{
+				"name": "NewDeaths",
+				"type": "String"
+			},
+			{
+				"name": "TotalRecovered",
+				"type": "String"
+			},
+			{
+				"name": "NewRecovered",
+				"type": "String"
+			},
+			{
+				"name": "ActiveCases",
+				"type": "String"
+			},
+			{
+				"name": "Serious,Critical",
+				"type": "String"
+			},
+			{
+				"name": "Tot Cases/1M pop",
+				"type": "String"
+			},
+			{
+				"name": "Deaths/1M pop",
+				"type": "String"
+			},
+			{
+				"name": "TotalTests",
+				"type": "String"
+			},
+			{
+				"name": "Tests/1M pop",
+				"type": "String"
+			},
+			{
+				"name": "WHO Region",
+				"type": "String"
+			}
+		]
+	}
+}
